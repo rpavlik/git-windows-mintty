@@ -7,8 +7,8 @@ Free yourself from the `cmd.exe` console, and enjoy a modern terminal emulator.
 
 # Download
 Download from the GitHub page above by clicking "Downloads", or follow
-this *direct link to the [MinTTY for Git for Windows download
-page](https://github.com/rpavlik/git-windows-mintty/downloads).*
+this **direct link to the [MinTTY for Git for Windows download
+page](https://github.com/rpavlik/git-windows-mintty/downloads).**
 
 # About
 Adds a context menu (right-click) item to folders for "Git Bash Here
