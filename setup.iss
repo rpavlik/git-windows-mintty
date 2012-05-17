@@ -28,8 +28,8 @@ ChangesAssociations=true
 AppendDefaultDirName=false
 ArchitecturesInstallIn64BitMode=x64
 DirExistsWarning=no
-WizardImageFile=install_sidebar.png
-WizardSmallImageFile=icon55.png
+WizardImageFile=install_sidebar.bmp
+WizardSmallImageFile=icon55.bmp
 WizardImageBackColor=$00A46534
 
 [Languages]
