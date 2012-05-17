@@ -10,7 +10,7 @@
 ; NOTE: The value of AppId uniquely identifies this application.
 ; Do not use the same AppId value in installers for other applications.
 ; (To generate a new GUID, click Tools | Generate GUID inside the IDE.)
-AppId={{C1788A57-E7F6-445E-803B-9BD63A556AF9}
+AppID={{C1788A57-E7F6-445E-803B-9BD63A556AF9}
 AppName={#MyAppName}
 AppVersion={#MyAppVersion}
 ;AppVerName={#MyAppName} {#MyAppVersion}
@@ -20,10 +20,14 @@ AppSupportURL={#MyAppURL}
 AppUpdatesURL={#MyAppURL}
 DefaultDirName={pf32}\Git
 DefaultGroupName={#MyAppName}
-LicenseFile=mintty-1.0.3\LICENSE
+LicenseFile=licenses.txt
 OutputBaseFilename=setup-mintty-for-git-for-windows
-Compression=lzma
-SolidCompression=yes
+Compression=lzma/Max
+SolidCompression=true
+ChangesAssociations=true
+AppendDefaultDirName=false
+ArchitecturesInstallIn64BitMode=x64
+DirExistsWarning=no
 
 [Languages]
 Name: "english"; MessagesFile: "compiler:Default.isl"
@@ -38,7 +42,6 @@ Name: "{group}\Git Bash (MinTTY)"; Filename: {app}\GitMintty.js; IconFilename: {
 
 [InnoIDE_Settings]
 UseRelativePaths=true
-
 
 [Files]
 Source: mintty-1.0.3\LICENSE; DestDir: {app}\mintty;
