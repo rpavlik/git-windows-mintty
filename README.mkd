@@ -1,10 +1,9 @@
 # [MinTTY][] for [Git for Windows][]
 Free yourself from the `cmd.exe` console, and enjoy a modern terminal emulator.
 
-Homepage: <https://github.com/rpavlik/git-windows-mintty>
-Maintainer: Ryan Pavlik <rpavlik@iastate.edu> <abiryan@ryand.net> <http://academic.cleardefinition.com>
-
-Please report any issues or suggestions on GitHub.
+- Homepage: <https://github.com/rpavlik/git-windows-mintty>
+- Maintainer: Ryan Pavlik <rpavlik@iastate.edu> <abiryan@ryand.net> <http://academic.cleardefinition.com>
+- Report any issues or suggestions: <https://github.com/rpavlik/git-windows-mintty/issues>
 
 # Download
 Download from the GitHub page above by clicking "Downloads", or follow
