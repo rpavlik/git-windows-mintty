@@ -5,12 +5,12 @@ Free yourself from the `cmd.exe` console, and enjoy a modern terminal emulator.
 - Maintainer: Ryan Pavlik <rpavlik@iastate.edu> <abiryan@ryand.net> <http://academic.cleardefinition.com>
 - Report any issues or suggestions: <https://github.com/rpavlik/git-windows-mintty/issues>
 
-# Download
+## Download
 Download from the GitHub page above by clicking "Downloads", or follow
 this **direct link to the [MinTTY for Git for Windows download
 page](https://github.com/rpavlik/git-windows-mintty/downloads).**
 
-# About
+## About
 Adds a context menu (right-click) item to folders for "Git Bash Here
 (MinTTY)" which will open your standard Git Bash in the very comfortable
 [MinTTY][] console instead of the painful Windows one. Uninstall will
@@ -27,9 +27,9 @@ launching, and the registry entries needed to add a context menu item.
 It must be installed to the same place as Git, and you must already have
 [Git for Windows][] installed.
 
-# Changelog
+## Changelog
 
-## Version 1.1 - 17 May 2012
+### Version 1.1 - 17 May 2012
 Bug-fix release: launch using the right Windows Scripting Host executable
 to avoid [this bug plaguing Git for Windows][gitwinbug] that causes problems
 only on Windows XP x64 and Server 2003 x64.  Yes, this means that not only is
@@ -37,10 +37,10 @@ this a nicer terminal to use, it's also a workaround for a bothersome bug!
 
 [gitwinbug]: http://stackoverflow.com/questions/10450550/msysgit-fork-cant-reserve-memory-for-stack
 
-## Version 1.0 - 17 May 2012
+### Version 1.0 - 17 May 2012
 Initial release.
 
-# Credits
+## Credits
 
 See `licenses.txt` for full license info on bundled files.
 
