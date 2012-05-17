@@ -28,6 +28,9 @@ ChangesAssociations=true
 AppendDefaultDirName=false
 ArchitecturesInstallIn64BitMode=x64
 DirExistsWarning=no
+WizardImageFile=install_sidebar.png
+WizardSmallImageFile=icon55.png
+WizardImageBackColor=$00A46534
 
 [Languages]
 Name: "english"; MessagesFile: "compiler:Default.isl"
