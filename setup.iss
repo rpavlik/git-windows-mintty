@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "MinTTY for Git for Windows"
-#define MyAppVersion "1.0"
+#define MyAppVersion "1.1"
 #define MyAppPublisher "Ryan Pavlik"
 #define MyAppURL "http://github.com/rpavlik/git-windows-mintty"
 
