@@ -1,9 +1,16 @@
-MinTTY is based on PuTTY, and is subject to the following licenses.
+This package is mostly just a nice installer around MinTTY, a WSH
+script, and the registry entries needed to add a context menu item.
+It must be installed to the same place as Git, and you must already
+have Git for Windows installed.
 
-The icon was created by Ryan Pavlik using the Konsole icon (LGPL2.1+)
-and the new Git logo. The Git logo by Jason Long is licensed under the
-Creative Commons Attribution 3.0 Unported License - see
-http://git-scm.com/downloads/logos.
+Includes MinTTY 1.0.3, MSYS version.
+
+The icon and setup art was created by Ryan Pavlik using the Konsole icon 
+(LGPL2.1+) and the new Git logo. The Git logo by Jason Long is licensed 
+under the Creative Commons Attribution 3.0 Unported License - see 
+http://git-scm.com/downloads/logos. 
+
+MinTTY is based on PuTTY, and is subject to the following licenses.
 
 ---
 
