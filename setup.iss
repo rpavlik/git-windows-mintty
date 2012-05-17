@@ -40,7 +40,7 @@ Name: "{group}\{cm:ProgramOnTheWeb,{#MyAppName}}"; Filename: "{#MyAppURL}"
 Name: "{group}\{cm:UninstallProgram,{#MyAppName}}"; Filename: "{uninstallexe}"
 Name: "{group}\MinTTY Manual"; Filename: {app}\mintty\mintty-1.0.3.pdf; 
 Name: "{group}\MinTTY Licenses and Docs"; Filename: {app}\mintty; 
-Name: "{group}\Git Bash (MinTTY)"; Filename: {app}\GitMintty.js; IconFilename: {app}\mintty\gitmintty.ico; 
+Name: "{group}\Git Bash (MinTTY)"; Filename: {syswow64}\wscript.exe; IconFilename: {app}\mintty\gitmintty.ico; Parameters: {app}\GitMintty.js; WorkingDir: %HOMEDRIVE%%HOMEPATH%; 
 
 
 [InnoIDE_Settings]
@@ -58,4 +58,4 @@ Source: licenses.txt; DestDir: {app}\mintty;
 
 [Registry]
 Root: HKCR; SubKey: Directory\shell\git_bash_mintty; ValueType: string; ValueData: "Git Bash Here (MinTTY)"; Flags: UninsDeleteKey; 
-Root: HKCR; SubKey: Directory\shell\git_bash_mintty\command; ValueType: string; ValueData: "wscript ""{app}\GitMintty.js"" ""%1"""; Flags: UninsDeleteKey; 
+Root: HKCR; SubKey: Directory\shell\git_bash_mintty\command; ValueType: string; ValueData: """{syswow64}\wscript.exe"" ""{app}\GitMintty.js"" ""%1"""; Flags: UninsDeleteKey; 
