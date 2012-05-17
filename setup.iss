@@ -52,3 +52,7 @@ Source: mintty-1.0.3\mintty.exe; DestDir: {app}\bin;
 Source: GitMintty.js; DestDir: {app};
 Source: gitmintty.ico; DestDir: {app}\mintty;
 Source: licenses.txt; DestDir: {app}\mintty;
+
+[Registry]
+Root: HKCR; SubKey: Directory\shell\git_bash_mintty; ValueType: string; ValueData: "Git Bash Here (MinTTY)"; Flags: UninsDeleteKey; 
+Root: HKCR; SubKey: Directory\shell\git_bash_mintty\command; ValueType: string; ValueData: "wscript ""{app}\GitMintty.js"" ""%1"""; Flags: UninsDeleteKey; 
