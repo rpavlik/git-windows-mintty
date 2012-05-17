@@ -2,28 +2,60 @@
 Free yourself from the `cmd.exe` console, and enjoy a modern terminal emulator.
 
 Homepage: <https://github.com/rpavlik/git-windows-mintty>
+Maintainer: Ryan Pavlik <rpavlik@iastate.edu> <abiryan@ryand.net> <http://academic.cleardefinition.com>
+
+Please report any issues or suggestions on GitHub.
+
+# Download
+Download from the GitHub page above by clicking "Downloads", or follow
+this *direct link to the [MinTTY for Git for Windows download
+page](https://github.com/rpavlik/git-windows-mintty/downloads).*
 
 # About
-Adds a context menu (right-click) item to folders for "Git Bash Here (MinTTY)" which will open your standard Git Bash in the very comfortable [MinTTY][] console instead of the painful Windows one. Uninstall will similarly remove the entry, keeping things nice and tidy.
+Adds a context menu (right-click) item to folders for "Git Bash Here
+(MinTTY)" which will open your standard Git Bash in the very comfortable
+[MinTTY][] console instead of the painful Windows one. Uninstall will
+similarly remove the entry, keeping things nice and tidy.
 
-Includes MinTTY 1.0.3, MSYS version.
+Includes [MinTTY][] 1.0.3, MSYS version.
 
-For a useful quick summary of why [MinTTY][] is cool, see <http://chadaustin.me/2009/10/reasons-why-mintty-is-the-best-terminal-on-windows/>
+For a useful quick summary of why [MinTTY][] is cool, see
+<http://chadaustin.me/2009/10/reasons-why-mintty-is-the-best-terminal-on-windows/>
+
+This package is mostly just a nice installer around [MinTTY][], a
+Windows Scripting Host script to tidily perform the appropriate
+launching, and the registry entries needed to add a context menu item.
+It must be installed to the same place as Git, and you must already have
+[Git for Windows][] installed.
 
 # Credits
 
-This package is mostly just a nice installer around [MinTTY][], a Windows Scripting Host script, and the registry entries needed to add a context menu item. It must be installed to the same place as Git, and you must already have [Git for Windows][] installed.
+See `licenses.txt` for full license info on bundled files.
 
+- Wouldn't exist without [Git][] and the [Git for Windows][] port.
+
+- Provides a simple access point for the great [MinTTY][] project.
+
+- Really simple installer built with [InnoSetup][] (specifically the
+	quick-start pack including InnoIDE)
 
 - Setup artwork and app icon composed by Ryan Pavlik based on:
 
-    - Git artwork: Git Logo by [Jason Long][] is licensed under the [Creative Commons Attribution 3.0 Unported License](http://creativecommons.org/licenses/by/3.0/). <http://git-scm.com/downloads/logos>
+	- Git artwork: Git Logo by [Jason Long][] is licensed under the
+		[Creative Commons Attribution 3.0 Unported License][cc-by-3.0].
+		<http://git-scm.com/downloads/logos>
 
-    - Console icon: from Konsole in the "Oxygen" icon set. LGPL 2.1+. <http://websvn.kde.org/trunk/kdesupport/oxygen-icons/scalable/apps/utilities-terminal.svgz> (see also Wikipedia [image entry][wikipediakonsole]) and [Oxygen Project entry][oxyproj]
+	- Console icon: from Konsole in the "Oxygen" icon set. LGPL 2.1+.
+		<http://websvn.kde.org/trunk/kdesupport/oxygen-icons/scalable/apps/utili
+		ties-terminal.svgz> (see also Wikipedia [image entry][wikipediakonsole])
+		and [Oxygen Project entry][oxyproj]
 
-	
+
+[Git]: http://git-scm.com/
 [Git for Windows]: http://msysgit.github.com/
 [MinTTY]: http://code.google.com/p/mintty/
+[InnoSetup]: http://www.jrsoftware.org/isdl.php
 [Jason Long]: http://twitter.com/jasonlong
+[cc-by-3.0]: http://creativecommons.org/licenses/by/3.0/
 [wikipediakonsole]:http://en.wikipedia.org/wiki/File:Konsole_icon.svg
 [oxyproj]:http://en.wikipedia.org/wiki/Oxygen_Project
