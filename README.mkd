@@ -16,7 +16,7 @@ Adds a context menu (right-click) item to folders for "Git Bash Here
 [MinTTY][] console instead of the painful Windows one. Uninstall will
 similarly remove the entry, keeping things nice and tidy.
 
-Includes [MinTTY][] 1.0.3, MSYS version.
+Includes [MinTTY][] 1.1.3, MSYS version.
 
 For a useful quick summary of why [MinTTY][] is cool, see
 <http://chadaustin.me/2009/10/reasons-why-mintty-is-the-best-terminal-on-windows/>
@@ -28,6 +28,11 @@ It must be installed to the same place as Git, and you must already have
 [Git for Windows][] installed.
 
 ## Changelog
+
+### Version 1.2 - 20 June 2013
+Updated MinTTY to v1.1.3. See [MinTTY changelog][] for details.
+
+[MinTTY changelog]: https://code.google.com/p/mintty/wiki/Changes
 
 ### Version 1.1 - 17 May 2012
 Bug-fix release: launch using the right Windows Scripting Host executable
