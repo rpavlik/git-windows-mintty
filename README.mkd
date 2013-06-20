@@ -8,7 +8,7 @@ Free yourself from the `cmd.exe` console, and enjoy a modern terminal emulator.
 ## Download
 Download from the GitHub page above by clicking "Downloads", or follow
 this **direct link to the [MinTTY for Git for Windows download
-page](https://github.com/rpavlik/git-windows-mintty/downloads).**
+page][download].**
 
 ## About
 Adds a context menu (right-click) item to folders for "Git Bash Here
@@ -26,6 +26,16 @@ Windows Scripting Host script to tidily perform the appropriate
 launching, and the registry entries needed to add a context menu item.
 It must be installed to the same place as Git, and you must already have
 [Git for Windows][] installed.
+
+## Building
+You can get the precompiled binary installer from the [downloads page][download]. 
+However if you want to build the installer from source:
+
+- Install [Inno Setup][]
+- Right-click `setup.iss` and select **Compile**
+- The installer is created in the `Output` directory
+
+[Inno Setup]: http://www.jrsoftware.org/isinfo.php
 
 ## Changelog
 
@@ -67,7 +77,7 @@ See `licenses.txt` for full license info on bundled files.
 		ties-terminal.svgz> (see also Wikipedia [image entry][wikipediakonsole])
 		and [Oxygen Project entry][oxyproj]
 
-
+[download]: https://github.com/rpavlik/git-windows-mintty/downloads
 [Git]: http://git-scm.com/
 [Git for Windows]: http://msysgit.github.com/
 [MinTTY]: http://code.google.com/p/mintty/
