@@ -22,6 +22,7 @@ if (WScript.Arguments.Length > 0) {
 
 var cmd = quotedAbsolutePath("bin\\mintty.exe") +
 	minttyArgs +
+	" --config " + wshShell.ExpandEnvironmentStrings("%USERPROFILE%") + "/.minttyrc" +
 	" --icon " + quotedAbsolutePath("mintty\\gitmintty.ico") +
 	" --exec " + quotedAbsolutePath("bin\\sh.exe") +
 	shellArgs;
