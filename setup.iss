@@ -2,7 +2,7 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "MinTTY for Git for Windows"
-#define MyAppVersion "1.1"
+#define MyAppVersion "1.2"
 #define MyAppPublisher "Ryan Pavlik"
 #define MyAppURL "http://github.com/rpavlik/git-windows-mintty"
 
@@ -38,7 +38,7 @@ Name: "english"; MessagesFile: "compiler:Default.isl"
 [Icons]
 Name: "{group}\{cm:ProgramOnTheWeb,{#MyAppName}}"; Filename: "{#MyAppURL}"
 Name: "{group}\{cm:UninstallProgram,{#MyAppName}}"; Filename: "{uninstallexe}"
-Name: "{group}\MinTTY Manual"; Filename: {app}\mintty\mintty-1.0.3.pdf; 
+Name: "{group}\MinTTY Readme"; Filename: {app}\mintty\readme-msys.html; 
 Name: "{group}\MinTTY Licenses and Docs"; Filename: {app}\mintty; 
 Name: "{group}\Git Bash (MinTTY)"; Filename: {syswow64}\wscript.exe; IconFilename: {app}\mintty\gitmintty.ico; Parameters: {app}\GitMintty.js; WorkingDir: %HOMEDRIVE%%HOMEPATH%; 
 
@@ -47,11 +47,11 @@ Name: "{group}\Git Bash (MinTTY)"; Filename: {syswow64}\wscript.exe; IconFilenam
 UseRelativePaths=true
 
 [Files]
-Source: mintty-1.0.3\LICENSE; DestDir: {app}\mintty;
-Source: mintty-1.0.3\LICENSE.Oxygen; DestDir: {app}\mintty;
-Source: mintty-1.0.3\LICENSE.PuTTY; DestDir: {app}\mintty;
-Source: mintty-1.0.3\mintty-1.0.3.pdf; DestDir: {app}\mintty;
-Source: mintty-1.0.3\mintty.exe; DestDir: {app}\bin;
+Source: mintty-1.1.3\LICENSE; DestDir: {app}\mintty;
+Source: mintty-1.1.3\LICENSE.Oxygen; DestDir: {app}\mintty;
+Source: mintty-1.1.3\LICENSE.PuTTY; DestDir: {app}\mintty;
+Source: mintty-1.1.3\readme-msys.html; DestDir: {app}\mintty;
+Source: mintty-1.1.3\mintty.exe; DestDir: {app}\bin;
 Source: GitMintty.js; DestDir: {app};
 Source: gitmintty.ico; DestDir: {app}\mintty;
 Source: licenses.txt; DestDir: {app}\mintty;
@@ -59,3 +59,5 @@ Source: licenses.txt; DestDir: {app}\mintty;
 [Registry]
 Root: HKCR; SubKey: Directory\shell\git_bash_mintty; ValueType: string; ValueData: "Git Bash Here (MinTTY)"; Flags: UninsDeleteKey; 
 Root: HKCR; SubKey: Directory\shell\git_bash_mintty\command; ValueType: string; ValueData: """{syswow64}\wscript.exe"" ""{app}\GitMintty.js"" ""%1"""; Flags: UninsDeleteKey; 
+Root: HKCR; SubKey: Directory\Background\shell\git_bash_mintty; ValueType: string; ValueData: "Git Bash Here (MinTTY)"; Flags: UninsDeleteKey; 
+Root: HKCR; SubKey: Directory\Background\shell\git_bash_mintty\command; ValueType: string; ValueData: """{syswow64}\wscript.exe"" ""{app}\GitMintty.js"" ""%V"""; Flags: UninsDeleteKey; 
