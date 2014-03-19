@@ -15,7 +15,12 @@ var shellArgs = " --login -i";
 var minttyArgs = " --title \"Git Bash\"";
 
 if (WScript.Arguments.Length > 0) {
-	wshShell.CurrentDirectory = WScript.Arguments(0);
+	var argument = WScript.Arguments(0);
+	if (fso.FolderExists(argument)) {
+		wshShell.CurrentDirectory = argument;
+	} else {
+		wshShell.CurrentDirectory = fso.GetParentFolderName(argument);
+	}
 } else {
 	wshShell.CurrentDirectory = wshShell.ExpandEnvironmentStrings("%USERPROFILE%");
 }
