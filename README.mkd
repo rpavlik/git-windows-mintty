@@ -2,8 +2,14 @@
 Free yourself from the `cmd.exe` console, and enjoy a modern terminal emulator.
 
 - Homepage: <https://github.com/rpavlik/git-windows-mintty>
-- Maintainer: Ryan Pavlik <rpavlik@iastate.edu> <abiryan@ryand.net> <http://academic.cleardefinition.com>
-- Report any issues or suggestions: <https://github.com/rpavlik/git-windows-mintty/issues>
+
+## Project Status
+
+I do not know if this is even useful anymore, it is pretty old.
+
+I lack the capacity to maintain this in any useful way.
+
+**Unmaintained and likely obsolete**
 
 ## Download
 Download from the GitHub page above by clicking "Downloads", or follow
